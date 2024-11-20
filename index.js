@@ -21,6 +21,4 @@ app.post('/data', (req, res) => {
 });
 
 // Iniciar o servidor
-app.listen(5000, '0.0.0.0', () => {
-    console.log('Servidor rodando na porta 5000');
-});
+app.listen(process.env.PORT || 3000);
